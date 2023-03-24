@@ -3,10 +3,11 @@ import './footer.css';
 import Logo from '../images/Logo.png';
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
-function Footerr(){
+function Footer(){
     return(
         <>
         <div className='flex'>
+        <div>
         <ul className='footer'>
         <li className='footer-item'><button className="contact">Contact Us</button></li>
         <li className='footer-item'>About Us</li>
@@ -15,8 +16,14 @@ function Footerr(){
         <li className='footer-item'>Terms of Services</li>
         <li className='footer-item'>Privacy Policy</li>
        </ul>
+       <h6 className='ltd'>© 2022 AmieExplore Ltd</h6>
+       <ul className='setting_item'>
+        <li><h6>Legal Information</h6></li>
+        <li><h6>Setting</h6></li>
+       </ul>
+       </div>
        <div className='logos'>
-        <img src={Logo} alt='logo' />
+        <img src={Logo} alt='logo' height='130' width='164' />
 
         <div className='social-logo'>
         <h6>Follow Us:</h6>
@@ -30,4 +37,4 @@ function Footerr(){
         </>
     )
 }
-export default Footerr;
+export default Footer;
