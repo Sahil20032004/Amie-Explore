@@ -14,9 +14,8 @@ const App = () => (
     </div>
     <div className='explore'>Let's Explore Nearby</div>
     <div className="search_wrap search_wrap_3">
-    <input type='text' className='restaurant' placeholder="Restaurant,Shoe Shop....." />
 			<div className="search_box">
-				<input type="text" className="input" placeholder="Location...." />
+				<input type="text" className="input" placeholder="Restaurant, Shoe Shops...." />
 				<div class="btn btn_common">
 					<BsSearch className='fas' />
 				</div>

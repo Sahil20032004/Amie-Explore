@@ -21,10 +21,9 @@
           font-size: 20px;
           border-color: #ED560B;
           border-style: solid;
-          border-width: 2px;
-          border-radius: 22px;
-          padding: 5px 10px;
-          text-transform: uppercase;
+          border-width: 1px;
+          border-radius: 20px;
+          padding: 1px 8px;
           transition: all 0.2s linear;}
           a {
               text-decoration: none;
@@ -37,23 +36,24 @@
           transition: all 0.2s linear;
       }
       .outline:active {
-          border-radius: 22px;
+          border-radius: 20px;
       }
       .signup{
         position: relative;
-          z-index: 3;
+          z-index: 2;
           background: #ED560B;
           color: white;
           font-size: 20px;
           border-color: #ED560B;
           border-style: solid;
-          border-width: 2px;
-          border-radius: 22px;
-          padding: 5px 20px;
+          border-width: 1px;
+          border-radius: 20px;
+          padding: 1px 8px;
       }
     
 .list{
-  padding-left:700px;
+  display: flex;
+  flex-direction: row;
 }
 .list_item{
   margin-top:0;
@@ -70,6 +70,14 @@
   
 }
 
-.logo{
-  backdrop-filter: 1;
+.buttons{
+  padding-left: 750px;
+}
+.modal_button{
+  border-radius: 50px;
+  border-color: #ED560B;
+  background-color: white;
+}
+.modal_button:hover{
+  background-color: #ED560B;
 }
