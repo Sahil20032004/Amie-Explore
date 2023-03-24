@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.js';
 import Footer from './components/Footer/Footer.js';
+import Cataegory from './components/Cataegories/Cataegory'
 import './App.css';
 import background from '../src/components/images/bgimage.png';
 import { BsSearch } from "react-icons/bs";
@@ -13,15 +14,16 @@ const App = () => (
     </div>
     <div className='explore'>Let's Explore Nearby</div>
     <div className="search_wrap search_wrap_3">
+    <input type='text' className='restaurant' placeholder="Restaurant,Shoe Shop....." />
 			<div className="search_box">
-				<input type="text" className="input" placeholder="Restaurant,Shoe Shop" />
-        {/* <input type="text" class="input" placeholder="search..." /> */}
+				<input type="text" className="input" placeholder="Location...." />
 				<div class="btn btn_common">
 					<BsSearch className='fas' />
 				</div>
 			</div>
 		</div>
     </div>
+    <Cataegory />
     <Footer />
   </div>
 );
