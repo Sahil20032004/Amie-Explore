@@ -1,0 +1,68 @@
+*{transition:all 0.3s ease-in-out;}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+  button {
+    cursor: pointer;
+    outline: none;}
+      .outline {
+          position: relative;
+          background: transparent;
+          color: #ED560B;
+          font-size: 20px;
+          border-color: #ED560B;
+          border-style: solid;
+          border-width: 2px;
+          border-radius: 22px;
+          padding: 10px 40px;
+          text-transform: uppercase;
+          transition: all 0.2s linear;}
+          a {
+              text-decoration: none;
+          }
+      
+      .outline:hover {
+          color: white;
+          background: #ED560B;
+          border-color: white;
+          transition: all 0.2s linear;
+      }
+      .outline:active {
+          border-radius: 22px;
+      }
+      .signup{
+        position: relative;
+          z-index: 3;
+          background: #ED560B;
+          color: black;
+          font-size: 20px;
+          border-color: #ED560B;
+          border-style: solid;
+          border-width: 2px;
+          border-radius: 22px;
+          padding: 10px 40px;
+      }
+    
+.list{
+  padding-left:700px;
+}
+ul li{
+  margin-top:0;
+  display: inline-block; 
+  padding-left:10px;
+  font-size:20px; 
+  font-family:Roboto;
+  font-weight: 500;
+  color: black;
+}
+
+ul li:hover{
+  color:#ED560B;
+  
+}
+

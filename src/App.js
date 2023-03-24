@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbarr from './components/Navbar/Navbarr.js';
+import Footerr from './components/Footer/Footerr.js';
 import './App.css';
+import background from '../src/components/images/bgimage.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div className="app">
+   <div className='background' style={{ backgroundImage: `url(${background})` }}>
+    <div className="navbar">
+      <Navbarr />
     </div>
-  );
-}
+    </div>
+    <Footerr />
+  </div>
+);
 
 export default App;
