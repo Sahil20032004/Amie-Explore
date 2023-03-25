@@ -1,8 +1,7 @@
-import React from 'react'
-import './card.css'
-import abhinav from '../images/abhinav.png'
-import back from '../images/back.jpeg'
-import rating from '../images/rating.png'
+import React from 'react';
+import './card.css';
+import abhinav from '../images/abhinav.png';
+import back from '../images/back.jpeg';
 export default function card() {
   return (
     <div className='cards'> 
@@ -13,7 +12,7 @@ export default function card() {
           <p>wrote a reivew</p>
         </div>
      </div>
-      <img src={back} className='background_image'/>
+      <img src={back} className='background_image' alt='background'/>
       <div className='rieviews'>
         <h5>Krisha cafe</h5>
         <p>Always great for a big party celebration. They take reservations. We like to sit in the back</p>

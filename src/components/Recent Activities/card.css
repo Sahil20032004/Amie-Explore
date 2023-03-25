@@ -5,6 +5,7 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 .image_contianer{
     margin: 5px;

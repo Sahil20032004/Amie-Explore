@@ -3,12 +3,30 @@ import Navbar from './components/Navbar/Navbar.js';
 import Footer from './components/Footer/Footer.js';
 import Cataegory from './components/Cataegories/Cataegory'
 import './App.css';
-import background from '../src/components/images/bgimage1.png';
+import bgimage1 from '../src/components/images/bgimage1.png';
+import bgimage2 from '../src/components/images/bgimage2.jpg';
+import bgimage3 from '../src/components/images/bgimage3.jpg';
 import { BsSearch } from "react-icons/bs";
 
-const App = () => (
+const images = [ bgimage1, bgimage2, bgimage3 ];
+
+export default function App() {
+
+  const [value, setValue] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setValue((v) => {
+        return v === 2 ? 0 : v + 1;
+      });
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+
+  return(
   <div className="app">
-   <div className='background' style={{ backgroundImage: `url(${background})` }}>
+   <div className='background' style={{ backgroundImage: `url(${images[value]})` }}>
     <div className="navbar">
       <Navbar />
     </div>
@@ -27,4 +45,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+}

@@ -1,17 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './footer.css';
 import Logo from '../images/Logo.png';
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 
 function Footer(){
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return(
         <>
         <div className='flex'>
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Contact Us</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="name"
+                placeholder="Name"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Query</Form.Label>
+              <Form.Control as="textarea" rows={3} />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <button className='modal_button' onClick={handleClose}>
+            Submit
+          </button>
+        </Modal.Footer>
+      </Modal>
         <div>
         <ul className='footer'>
-        <li className='footer-item'><button className="contact">Contact Us</button></li>
+        <li className='footer-item'><button className="contact" onClick={handleShow}>Contact Us</button></li>
         <li className='footer-item'>About Us</li>
-        <li className='footer-item'>Community</li>
+        <li className='footer-item'>For Business</li>
         <li className='footer-item'>Careers</li>
         <li className='footer-item'>Terms of Services</li>
         <li className='footer-item'>Privacy Policy</li>
