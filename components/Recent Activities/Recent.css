@@ -1,0 +1,12 @@
+h2{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.contain{
+    margin: 10px auto;
+    width:80%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
